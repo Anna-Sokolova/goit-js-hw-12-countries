@@ -6,7 +6,19 @@ import 'material-design-icons/iconfont/material-icons.css';
 PNotify.defaults.styling = 'material';
 PNotify.defaults.icons = 'material';
 
+ export function notificationError(error) {
+  PNotify.error({
+    text: error,
+    delay: 2000,
+    animateSpeed: 'slow',
+  });
+}
 
-PNotify.error({
-  text: "Опаньки! Сделайте более корректный запрос! Мы ждем...",
-});
+export function notificationAlert(alert) {
+  PNotify.alert({
+    text: alert,
+    type: 'notice',
+    delay: 2000,
+    animateSpeed: 'slow',
+  });
+}

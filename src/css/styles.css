@@ -12,22 +12,60 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  background-color: rgb(238, 203, 248);
+  background-image: url('/images/world-img.jpg');
+  background-size: cover;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 ul {
   list-style: none;
 }
-.wrap {
+a {
+  text-decoration: none;
+}
+.wrapInput {
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
   padding: 32px;
 }
 
+.wrapOutput {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.countryName {
+  font-size: 18px;
+}
+
+.countryNativeName {
+  font-size: 18px;
+  color: royalblue;
+}
+
+.separator {
+  color: rgb(137, 13, 172);
+}
+.description {
+  margin-bottom: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 24px;
+  color: rgb(233, 226, 198);
+}
+
 .input {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #9e9e9e;
+  border-bottom: 1px solid #ebe7e7;
   border-radius: 0;
   outline: none;
   height: 3rem;
@@ -40,31 +78,31 @@ ul {
   box-shadow: none;
   box-sizing: content-box;
   transition: all 0.3s;
-}
-
-.btn {
-  outline: transparent;
-  font-style: inherit;
-  text-decoration: none;
-  color: #fff;
-  background-color: #26a69a;
-  text-align: center;
-  letter-spacing: 0.5px;
-  transition: 0.2s ease-out;
   cursor: pointer;
-  border: none;
-  border-radius: 2px;
-  display: inline-block;
-  height: 36px;
-  line-height: 36px;
-  padding: 0 2rem;
-  text-transform: uppercase;
-  vertical-align: middle;
-  -webkit-tap-highlight-color: transparent;
 }
 
-.btn:hover {
-  background-color: #2bbbad;
-  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+input::placeholder {
+  color: rgb(233, 226, 198);
+}
+.titleCountry {
+  font-size: 36px;
+  color: #2e2c2c;
+  text-align: center;
 }
 
+.item {
+  font-size: 18px;
+  color: #2e2c2c;
+}
+
+.languagesList {
+  list-style: square;
+}
+
+.flex {
+  display: flex;
+}
+.wrapFlag {
+  display: flex;
+  margin-left: 50px;
+}

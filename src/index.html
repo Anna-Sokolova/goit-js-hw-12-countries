@@ -8,14 +8,17 @@
   </head>
 
   <body>
-    <div class="wrap">
+    <div class="wrapInput">
+      <p class="description">Search countries by name</p>
       <input
-        class="input"
-        name="search"
+        class="input jsInput"
+        name="query"
         type="text"
-        placeholder="Введите страну"
+        placeholder="Search for country"
       />
-      <!-- <button class="btn" type="button">Искать</button> -->
+    </div>
+    <div class="wrapOutput">
+      <ul class="countries jsCountries"></ul>
     </div>
   </body>
 </html>
